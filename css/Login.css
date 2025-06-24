@@ -1,0 +1,11 @@
+body{
+    overflow: hidden;
+}
+.overlay-box {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: black;
+    z-index: 10;
+    width: 40%;
+}
