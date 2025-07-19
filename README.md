@@ -1,4 +1,6 @@
-# 👁️ EyeOnic
+# <p align="center">
+  <img src="Images/1-removebg-preview (1).png" alt="EyeOnic Logo" width="150"/>
+</p> EyeOnic
 
 **EyeOnic** is a modern, responsive eyewear showcase website built with HTML, CSS, and Bootstrap.  
 It highlights premium frames, lenses, and glasses with a sleek, user-friendly interface.
@@ -13,14 +15,23 @@ It highlights premium frames, lenses, and glasses with a sleek, user-friendly in
 ## 📁 Project Structure
 
 Eyeonic/
+
 ├── bootstrap-5.3.3-dist/
+
 ├── css/
+
 ├── HTML/
+
 ├── Images/
+
 ├── JavaScript/
+
 ├── Jquery/
+
 ├── Video/
+
 ├── Word-files/
+
 ├── index.html
 
 ---
