@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyeSonic</title>
+    <link rel="shortcut icon" href="Images/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="main">
+
+        </nav>
+        <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="checkoutModalLabel"><span class="text-dark">Are you sure?</span></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark">
+                        Do you really want to proceed with the checkout?
+                    </div>
+                    <div class="modal-footer row">
+                        <div class="col-1"></div>
+                        <button type="button" class="col-3 btn" style="background-color: Green;"
+                            id="confirmCheckout">Yes</button>
+                        <button type="button" class="col-3 btn" style="background-color: red;"
+                            data-bs-dismiss="modal">No</button>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="hero-section">
+            <div class="dna-bg">
+                <div class="dna-strand"></div>
+                <div class="dna-strand"></div>
+                <div class="dna-strand"></div>
+                <div class="dna-strand"></div>
+                <div class="dna-strand"></div>
+            </div>
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="glitch-wrapper">
+                            <h1 class="hero-title glitch-text">Find Your Perfect Eyewear Look</h1>
+                        </div>
+                        <p class="lead mb-4">We're all about finding you that perfect pair. Experience the
+                            difference a
+                            perfect
+                            pair makes. Let's find yours together.</p>
+
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#dash">
+                                <button class="btn btn-custom">
+                                    <i class="fas fa-glasses me-2"></i>Explore Shop
+                                </button>
+                            </a>
+                            <a href="#dash1">
+                                <button class="btn btn-custom1">
+                                    <i class="fas fa-tag me-2"></i>Use Your Benefits
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="ratings-box d-inline-flex align-items-center ">
+                            <div class="me-3 d-flex">
+                                <img src="Images/CUSTOMERS REVIEWs/portrait-fair-haired-beautiful-female-woman-with-broad-smile-thumbs-up_176420-14970.avif"
+                                    alt="User" class="rounded-circle me-2 ">
+                                <img src="Images/CUSTOMERS REVIEWs/pretty-european-woman-casual-sweater-pink-wall_343596-5835.avif"
+                                    alt="User" class="rounded-circle me-2 ">
+                                <img src="Images/CUSTOMERS REVIEWs/satisfied-cute-redhead-girl-thumbs-up-approval-like-idea_176420-19224.avif"
+                                    alt="User" class="rounded-circle ">
+                            </div>
+                            <div>
+                                <div class="fw-bold mb-1 ">50k+ Satisfied Customers</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-4">
+                                <div class="product-card1">
+                                    <div class="product-img-wrapper1">
+                                        <a href="#dash"><img src="Images/lemtosh-model-pos-1_856x.webp"
+                                                alt="Frames"></a>
+                                    </div>
+                                    <h5 class="text-center py-3 mb-0">FRAMES</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="product-card1">
+                                    <div class="product-img-wrapper1">
+                                        <a href="#dash"><img src="Images/LANDING PAGE IMAGES/Image2.jpg"
+                                                alt="Lenses"></a>
+                                    </div>
+                                    <h5 class="text-center py-3 mb-0">CONTACT LENSES</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="product-card1">
+                                    <div class="product-img-wrapper1">
+                                        <a href="#dash"><img
+                                                src="https://encrypted-tbn0.gstatic.com/Images?q=tbn:ANd9GcQR3dh6HNjRQjs0VPa2V-cBnDp1Fv6EGOSCRUqUsdNX2IdSUh7PROQS_B7lxbO5gcPSybE&usqp=CAU"
+                                                alt="More Glasses"></a>
+                                    </div>
+                                    <h5 class="text-center py-3 mb-0">SUNGLASSES</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    <div class="bottom-box" id="btbox">
+        <span>This product has been added to<br> your cart successfully.
+            <a href="#hero" id="gtcart">Cart</a></span>
+        <button class="close-btn" id="crosbtn">&times;</button>
+    </div>
+    <div class="bottom-box" id="lbtbox">
+        <span>This product has been added to your<br> wishlist successfully.
+            <a href="#hero" id="gtlist">List</a></span>
+        <button class="close-btn" id="crossbtn">&times;</button>
+    </div>
+    <div class="green-box" id="gbtbox">
+        <span>Proceeding with checkout...</span>
+        <button class="close-btn" id="crosssbtn">&times;</button>
+    </div>
+    </section>
+    <section class="brand-cards" id="dash">
+        <div class="container text-center">
+            <h2>More Glasses</h2>
+            <div class="row mt-4">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <p class="framdesc-hover text-uppercase text-light">A frame is a supporting structure that holds
+                        or encloses an object, often enhancing its stability and appearance.</p>
+                    <div class="product-card h-100 card-effect" id="Frames">
+                        <div class="product-image-container">
+                            <img src="Images/Bogle_2A.webp" alt="Brand 1"
+                                class="product-card-img-top productnumber1">
+                        </div>
+                        <div class="product-card-body">
+                            <h5 class="product-card-title">Frames</h5>
+                            <p id="Frame" class="product-btn">More</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <p class="lensdesc-hover text-uppercase text-light">A contact lens frame refers to the curved
+                        design that supports and shapes the lens, ensuring a comfortable fit on the eye.</p>
+                    <div class="product-card h-100 card-effect" id="Lenses">
+                        <div class="product-image-container">
+                            <img src="Images/MORE GLASSES/contact-lens.jpg" alt="Brand 2"
+                                class="product-card-img-top productnumber2">
+                        </div>
+                        <div class="product-card-body">
+                            <h5 class="product-card-title">Contact Lenses</h5>
+                            <p id="Lense" class="product-btn">More</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <p class="glassdesc-hover text-uppercase text-light">A sunglasses frame holds tinted lenses,
+                        offering protection from sunlight while ensuring comfort and style.</p>
+                    <div class="product-card h-100 card-effect" id="Glasses">
+                        <div class="product-image-container">
+                            <img src="Images/MORE GLASSES/SUNGLASSES.jpg" alt="Brand 3"
+                                class="product-card-img-top  productnumber3">
+                        </div>
+                        <div class="product-card-body">
+                            <h5 class="product-card-title">Sunglasses</h5>
+                            <p id="Glass" class="product-btn">More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="Glasses-Container bg-body-secondary card p-4 brandsinfo" id="brandsinfo">
+                    <div class="container text-center">
+                        <h2>Explore Our Brands</h2>
+                        <div class="row mt-4">
+                            <div class="col-12 col-sm-3 col-md-3 mb-4">
+                                <div class="card h-100 card-effect">
+                                    <div class="image-container">
+                                        <img src="Images/Brand-Logos/moscot.gif" alt="Brand 1" class="card-img-top">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">MOSCOT</h5>
+                                        <p class="card-text">Stylish and durable eyewear for every occasion.</p>
+                                        <p class="btn btn-primary" id="Moscot-brand">More Info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3 col-md-3 mb-4">
+                                <div class="card h-100 card-effect">
+                                    <div class="image-container">
+                                        <img src="Images/Brand-Logos/bartonp_1.gif" alt="Brand 2"
+                                            class="card-img-top">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Barton Perreira</h5>
+                                        <p class="card-text">Experience unmatched comfort and elegance.</p>
+                                        <p class="btn btn-primary" id="Barton-brand">More Info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3 col-md-3 mb-4">
+                                <div class="card h-100 card-effect">
+                                    <div class="image-container">
+                                        <img src="Images/Brand-Logos/jacques.gif" alt="Brand 3" class="card-img-top">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jacques Marie Mage</h5>
+                                        <p class="card-text">Sophisticated designs for the modern individual.</p>
+                                        <p class="btn btn-primary" id="Jacques-brand">More Info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3 col-md-3 mb-4">
+                                <div class="card h-100 card-effect">
+                                    <div class="image-container">
+                                        <img src="Images/Brand-Logos/ray-ban-logo-2.gif" alt="Brand 4"
+                                            class="card-img-top">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">RAY BAN</h5>
+                                        <p class="card-text">A premium brand for ultimate style.</p>
+                                        <p class="btn btn-primary" id="RAY-brand">More Info</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Glasses-Container card p-4 brandsinfo backgroud-changer" id="brandsinfo1">
+                    <div class="container text-center">
+                        <h2>Explore Our Brands</h2>
+                        <div class="row mt-4">
+                            <div class="col-12 col-sm-3 col-md-3 mb-4">
+                                <div class="card h-100 card-effect">
+                                    <div class="image-container">
+                                        <img src="Images/Brand-Logos/menicon.gif" alt="Brand 1" class="card-img-top">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Menicon</h5>
+                                        <p class="card-text">Menicon is the only manufacturer in the world that is
+                                            dedicated to all areas of contact lenses-related business</p>
+                                        <p class="btn btn-primary" id="Menicon-brand">More Info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3 col-md-3 mb-4">
+                                <div class="card h-100 card-effect">
+                                    <div class="image-container">
+                                        <img src="Images/Brand-Logos/freshlook.gif" alt="Brand 2"
+                                            class="card-img-top">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">FreshLook</h5>
+                                        <p class="card-text">FreshLook One-Day colored contact lenses by Alcon</p>
+                                        <p class="btn btn-primary" id="FreshLook-brand">More
+                                            Info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3 col-md-3 mb-4">
+                                <div class="card h-100 card-effect">
+                                    <div class="image-container">
+                                        <img src="Images/Brand-Logos/bellalens.gif" alt="Brand 3"
+                                            class="card-img-top">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">BellaLens</h5>
+                                        <p class="card-text">From regular and thin Lens Signature lenses to our top
+                                            line of Premium Glass lenses by BellaLens®</p>
+                                        <p class="btn btn-primary" id="Persol-brand">More Info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3 col-md-3 mb-4">
+                                <div class="card h-100 card-effect">
+                                    <div class="image-container">
+                                        <img src="Images/Brand-Logos/acuvue.gif" alt="Brand 4" class="card-img-top">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">ACUVUE</h5>
+                                        <p class="card-text">Designed to help with today's digitally intense
+                                            lifestyle</p>
+                                        <p class="btn btn-primary" id="ACUVUE-brand">More Info</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <hr>
+
+    <div class="modal fade" id="eyeModal" tabindex="-1" aria-labelledby="eyeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div>
+                        <label for="leftEyeSelect" class="form-label" style="color: black;">Left Eye</label>
+                        <p style="color: black;">Please select Number for your left eye</p>
+                        <select class="form-select" id="leftEyeSelect" aria-label="Select Left Eye Option">
+                            <option selected>Select an option...</option>
+                            <option value="1">0.00 Plain (Eye)</option>
+                            <option value="2">-0.50</option>
+                            <option value="3">-0.75</option>
+                            <option value="4">-1.00</option>
+                            <option value="5">-1.25</option>
+                            <option value="6">-1.50</option>
+                            <option value="7">-1.75</option>
+                            <option value="8">-2.00</option>
+                            <option value="9">-2.25</option>
+                            <option value="10">-2.50</option>
+                            <option value="11">-2.75</option>
+                            <option value="12">-3.00</option>
+                            <option value="13">-3.25</option>
+                            <option value="14">-3.50</option>
+                            <option value="15">-3.75</option>
+                            <option value="16">-4.00</option>
+                            <option value="17">-4.25</option>
+                            <option value="18">-4.50</option>
+                            <option value="19">-4.75</option>
+                            <option value="20">-5.00</option>
+                            <option value="21">-5.25</option>
+                            <option value="22">-5.50</option>
+                            <option value="23">-5.75</option>
+                            <option value="24">-6.00</option>
+                            <option value="25">-6.50</option>
+                            <option value="26">-7.00</option>
+                            <option value="27">-7.50</option>
+                            <option value="28">-8.00</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="rightEyeSelect" class="form-label" style="color: black;">Right Eye</label>
+                        <p style="color: black;">Please select Number for your right eye</p>
+                        <select class="form-select" id="rightEyeSelect" aria-label="Select Right Eye Option">
+                            <option selected>Select an option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">SAVE</button>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT SECTION -->
+    <section id="about-section" class="about-container">
+        <div class="hero-section">
+            <div class="scanning-effect"></div>
+            <div class="background-elements">
+                <svg class="floating-element" style="top: 20%; left: 80%;" width="20" height="20">
+                    <circle cx="10" cy="10" r="10" fill="#3498db" />
+                </svg>
+                <svg class="floating-element" style="top: 60%; left: 20%;" width="30" height="30">
+                    <rect width="30" height="30" fill="#2ecc71" />
+                </svg>
+                <svg class="floating-element" style="top: 40%; left: 50%;" width="25" height="25">
+                    <polygon points="12.5,0 25,25 0,25" fill="#e74c3c" />
+                </svg>
+            </div>
+            <div class="content-wrapper">
+                <h1 class="heading-animated">Eyeonic</h1>
+                <div class="main-content">
+                    <p>At <span class="emphasized-text">Eyeonic</span>, we're revolutionizing vision care with
+                        AI-driven diagnostics and personalized treatments. Experience clarity like never before,
+                        tailored to your unique visual needs.</p>
+                    <br>
+                    <p>Join thousands who've unlocked their visual potential with our team of experts, combining
+                        neuroscience and cutting-edge technology to enhance your sight for peak performance.</p>
+                </div>
+            </div>
+            <div class="animated-eye">
+                <div class="eye-inner">
+                    <div class="eye-center"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT PAGE -->
+    <section id="contact-section">
+        <h1 class="section-header text-uppercase">Contact Us</h1>
+        <div class="row form-and-map">
+            <div class="col-md-6">
+                <div class="custom-modal" id="customValidationModal" style="display: none;">
+                    <div class="custom-modal-dialog">
+                        <div class="custom-modal-content">
+                            <div class="custom-modal-header">
+                                <h5 class="custom-modal-title">Validation Message</h5>
+                                <button type="button" class="custom-btn-close" aria-label="Close"
+                                    onclick="closeCustomModal()">&times;</button>
+                            </div>
+                            <div class="custom-modal-body">
+                                <p id="customModalMessage"></p>
+                            </div>
+                            <div class="custom-modal-footer">
+                                <button type="button" class="custom-btn custom-btn-secondary"
+                                    onclick="closeCustomModal()">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="#" class="support-form" id="supportForm">
+                    <h1 class="form-title h4">FILL THIS</h1>
+                    <p class="form-description">Contact Us by fill this form</p>
+                    <input type="text" class="form-control mb-3" placeholder="Your Name" id="name">
+                    <input type="email" class="form-control mb-3" placeholder="Your Email" id="email">
+                    <input type="text" class="form-control mb-3" placeholder="Your Contact" id="contact">
+                    <textarea class="form-control mb-3" cols="30" rows="5" placeholder="Your message..."
+                        id="message"></textarea>
+                    <input type="submit" class="btn btn-primary w-100" value="Send Message">
+                </form>
+            </div>
+            <div class="col-md-6 map-wrapper">
+                <div class="map-content">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.6619847566217!2d67.03839717586814!3d24.87539164465899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e5e736977c1%3A0x70ed36c8a6891d3a!2sMazar-e-Quaid-e-Azam!5e0!3m2!1sen!2set!4v1735989294773!5m2!1sen!2set"
+                        width="100%" height="370" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row contact-info mt-4 justify-content-center">
+            <div class="col-md-3 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fa-solid fa-location-dot info-icon"></i>
+                        <h1 class="info-title">Location</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="info-detail">5.877577, 63.514645
+                            Arabian Sea</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fa-solid fa-envelope info-icon"></i>
+                        <h1 class="info-title">Email</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <a href="mailto:info@EyeOnic.com">
+                            <p class="info-detail">info@EyeOnic.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <i class="fa-solid fa-phone info-icon"></i>
+                        <h1 class="info-title">Phone</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="info-detail">+923001234567</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--TESTINOMIAL PAGE  -->
+    <section class="testimonials" id="dash3">
+        <div class="container">
+            <h2 class="section-title text-center">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-box">
+                        <p class="testimonial-text">"EyeSonic has transformed how I see the world. Stylish and
+                            reliable!"</p>
+                        <div class="testimonial-author">Sarah J.</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-box">
+                        <p class="testimonial-text">"Top-notch quality and amazing customer service. Highly
+                            recommend!"
+                        </p>
+                        <div class="testimonial-author">John D.</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-box">
+                        <p class="testimonial-text">"The frames and lenses are both trendy and durable. EyeSonic is
+                            my
+                            go-to."</p>
+                        <div class="testimonial-author">Emily R.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Eyeonic  -->
+    <section class="features-section" id="dash1">
+        <h1>Why Choose Eyeonic Glasses?</h1>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="feature-content">
+                    <h2>Filter Blue Lights</h2>
+                    <p>Filter Blue Lights provides advanced lenses to reduce eye strain and protect from harmful
+                        blue light.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-head-side-virus"></i>
+                </div>
+                <div class="feature-content">
+                    <h2>Reduces Headaches</h2>
+                    <p>Filter Blue Lights offers lenses that reduce eye strain and headaches while protecting
+                        from
+                        harmful blue light.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="feature-content">
+                    <h2>UV Protection</h2>
+                    <p>Our lenses reduce eye strain, headaches, and provide UV protection while blocking
+                        harmful
+                        blue light.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="feature-content">
+                    <h2>Relieves Eye Strain</h2>
+                    <p>Our lenses relieve eye strain, reduce headaches, and provide UV protection while
+                        blocking
+                        harmful blue light.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="feature-content">
+                    <h2>Scratch Resistance</h2>
+                    <p>Our scratch-resistant lenses relieve eye strain, reduce headaches, and provide UV
+                        protection while blocking harmful blue light</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-eye-dropper"></i>
+                </div>
+                <div class="feature-content">
+                    <h2>Vision Clarity</h2>
+                    <p>Our lenses offer enhanced vision clarity, relieve eye strain, reduce headaches, and
+                        provide
+                        UV protection while blocking harmful blue light.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col mb-4">
+                    <h4 class="footer-title">About Us</h4>
+                    <p class="footer-description">We are dedicated to providing innovative solutions and exceptional
+                        service to our clients worldwide, setting new standards in technological excellence.</p>
+                    <div class="social-icons">
+                        <button class="btn"><i class="fab fa-facebook-f"></i></button>
+                        <button class="btn"><i class="fab fa-twitter hahaha"></i></button>
+                        <button class="btn"><i class="fab fa-linkedin-in"></i></button>
+                        <button class="btn"><i class="fab fa-instagram"></i></button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 footer-col mb-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about-section">About Us</a></li>
+                        <li><a href="#contact-section">Contact Us</a></li>
+                        <li><a href="#dash1">Why Choose Us</a></li>
+                        <li><a href="#dash3">Testinomial</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 footer-col mb-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="contact-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Aptech North Nazimabad Center</span>
+                        </div>
+                        <div class="contact-info">
+                            <i class="fas fa-phone"></i>
+                            <span>+923001234567</span>
+                        </div>
+                        <div class="contact-info">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@EyeOnic.com">info@EyeOnic.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 row">
+                        <p class="mb-0 col-10">&copy; 2025 EyeOnic. All rights reserved.</p>
+                        <a href="#hero" class="back-to-top col-2">Back To Top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Jquery/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
