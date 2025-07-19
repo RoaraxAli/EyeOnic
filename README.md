@@ -1,8 +1,9 @@
 # <p align="center">
-  <img src="Images/1-removebg-preview (1).png" alt="EyeOnic Logo" width="150"/> EyeOnic
+  <img src="Images/1-removebg-preview (1).png" alt="EyeOnic Logo" width="150"/>
 </p>
 
-**EyeOnic** is a modern, responsive eyewear showcase website built with HTML, CSS, and Bootstrap.  
+**EyeOnic** is a modern, responsive eyewear showcase website 
+built with HTML, CSS, and Bootstrap.  
 It highlights premium frames, lenses, and glasses with a sleek, user-friendly interface.
 
 ---
